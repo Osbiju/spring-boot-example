@@ -18,8 +18,14 @@ public class Main {
         SpringApplication.run(Main.class, args);
     }
 
+    //    @GetMapping("/greet")
+    //    public String greet(){
+    //        return "Hello";
+    //    }
     @GetMapping("/greet")
-    public String greet(){
-        return "Hello";
+    public GreetResponse greet(){
+        return new GreetResponse("Hello");
     }
+
+    record GreetResponse(String greet){} //devuelve la peticion en formato jason
 }
