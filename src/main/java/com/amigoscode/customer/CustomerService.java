@@ -1,7 +1,6 @@
 package com.amigoscode.customer;
 
 import com.amigoscode.exception.ResourceNotFound;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
